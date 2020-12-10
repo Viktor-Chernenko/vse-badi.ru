@@ -1,0 +1,86 @@
+$color: (
+    base: #000,
+    1: #fff,
+    2: #494949,
+    3: #23B69B,
+    4: #2D2D2D,
+    5: #B3B3B3,
+    6: #BDBDBD,
+    7: #BABABA,
+    8: #B7B7B7,
+
+    icon: #fff,
+    icon-pagination: #b7b7b7,
+
+    nav-strip: #6c7076,
+    nav: #fff,
+    nav-hover: #65e496,
+
+    link-1: #65e496,
+    link-2: #4d525a,
+    link-3: #091423,
+
+    btn: #fff,
+    btn-form: #0e3306
+);
+
+$bg: (
+    base: #fff,
+    1: #3DD6BA,
+    2: #23B69B,
+    3: #0B0D14,
+    4: #2D2D2D,
+    5: #DCDCDC,
+    6:  #F5F5F5,
+
+    btn: #23B69B,
+    form: #f0f0f0
+);
+
+$fs: (
+    base: 16px,
+
+    title-xl: 70px,
+    title-lg: 30px,
+    title-md: 25px,
+    title-sm: 20px,
+    title-s: 18px,
+    title-detailed-product: 22px,
+
+    text-xl: 25px,
+    text-lg: 14px,
+    text-md: 12px,
+
+    nav-strip: 16px,
+
+    link: 16px,
+    link-1: 12px,
+    link-2: 15px,
+    link-3: 14px,
+
+    btn-1: 16px,
+    btn-2: 13px,
+    btn-3: 16px,
+    btn-5: 14px,
+    btn-form: 14px,
+
+    logo: 26px
+);
+
+:root {
+    --font-fam-base: 'SFProDisplay', 'sans-serif';
+
+    --wrap-max-width: 1293px;
+
+    @each $name, $colorValue in $color {
+        --color-#{$name}: #{$colorValue};
+    }
+
+    @each $name, $value in $fs {
+        --fs-#{$name}: #{$value};
+    }
+
+    @each $name, $value in $bg {
+        --bg-#{$name}: #{$value};
+    }
+}

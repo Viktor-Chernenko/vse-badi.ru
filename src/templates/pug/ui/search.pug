@@ -1,0 +1,17 @@
+mixin search-form(placeholder, searchIcon)
+  form.search-form
+    input.search-form__input(type="search" placeholder= placeholder)
+    button.btn.btn_3
+      svg.icon
+        use(xlink:href= searchIcon)
+    ul.search-result.active
+      li.search-result__item
+        a.search-result__link(href="#") Продукт 1
+      li.search-result__item
+        a.search-result__link(href="#") Продукт 2
+      li.search-result__item
+        a.search-result__link(href="#") Продукт 3
+      li.search-result__item
+        a.search-result__link(href="#") Продукт 4
+      li.search-result__item
+        a.search-result__link(href="#") Продукт 5

@@ -1,0 +1,32 @@
+mixin pagination
+    .pagination-box
+        .pagination
+            a(href="#").pagination-arrow-prev
+                svg.icon
+                    use(xlink:href="#icon-arrow")
+            span.text-base Страницы:
+            ul.pagination-list
+                li.pagination-list__item
+                    a(href="#").pagination__link 1
+                li.pagination-list__item
+                    a(href="#").pagination__link.active 2
+                li.pagination-list__item
+                    a(href="#").pagination__link 3
+                li.pagination-list__item
+                    a(href="#").pagination__link 4
+                li.pagination-list__item
+                    a(href="#").pagination__link ...
+                li.pagination-list__item
+                    a(href="#").pagination__link 23
+                li.pagination-list__item
+                    a(href="#").pagination__link 24
+            a(href="#").pagination-arrow-next
+                svg.icon
+                    use(xlink:href="#icon-arrow")
+        .pagination-container
+            ul.pagination-container-list
+                li.pagination-container-list__item 1
+                li.pagination-container-list__item -
+                li.pagination-container-list__item 23
+                li.pagination-container-list__item из
+                li.pagination-container-list__item 24

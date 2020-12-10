@@ -1,0 +1,8 @@
+mixin comments-item(name, avatar, text)
+  .comments__item
+    .img-box
+      img(src=avatar, alt="Аватар")
+    .text-box
+      .text-lg= name
+      .text-md.text-md_gray написал (а):
+      .text-md= text

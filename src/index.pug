@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Сервис проверки бадов и препоратов
+
+    //- favicons
+  
+    link(rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png" data-mce-href="images/favicons/apple-touch-icon-57x57.png")
+    link(rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-touch-icon-60x60.png" data-mce-href="images/favicons/apple-touch-icon-60x60.png")
+    link(rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png" data-mce-href="images/favicons/apple-touch-icon-72x72.png")
+    link(rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-touch-icon-76x76.png" data-mce-href="images/favicons/apple-touch-icon-76x76.png")
+    link(rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png" data-mce-href="images/favicons/apple-touch-icon-114x114.png")
+    link(rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-touch-icon-120x120.png" data-mce-href="images/favicons/apple-touch-icon-120x120.png")
+    link(rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png" data-mce-href="images/favicons/apple-touch-icon-144x144.png")
+    link(rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-touch-icon-152x152.png" data-mce-href="images/favicons/apple-touch-icon-152x152.png")
+    link(rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon-180x180.png" data-mce-href="images/favicons/apple-touch-icon-180x180.png")
+    link(rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32" data-mce-href="images/favicons/favicon-32x32.png")
+    link(rel="icon" type="image/png" href="images/favicons/android-chrome-192x192.png" sizes="192x192" data-mce-href="images/favicons/android-chrome-192x192.png")
+    link(rel="icon" type="image/png" href="images/favicons/favicon-96x96.png" sizes="96x96" data-mce-href="images/favicons/favicon-96x96.png")
+    link(rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16" data-mce-href="images/favicons/favicon-16x16.png")    
+    meta(name="msapplication-TileColor" content="#da532c")
+    meta(name="msapplication-TileImage" content="images/favicons/mstile-144x144.png")
+    meta(name="theme-color" content="#ffffff")
+    link(rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css")
+
+    link(rel="stylesheet" href="css/style.css")
+  body
+    include ./templates/pug/ui/search
+    include ./templates/pug/nav-section-item
+    include ./templates/pug/important-material
+    include ./templates/pug/comments-item
+
+    include ./templates/pug/header
+
+    main.main
+      section.main-title
+        .wrap
+          .main-title-box
+            img(src="images/main-title-img(doctor).png", alt="Доктор")
+            .text-box
+              h1.title-xl Сервис проверки бадов и препоратов
+              p.text-xl Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.
+
+      section.nav-sections
+        .wrap
+          .nav-sections-box
+            .wrap-2
+              h3.title-lg Найдите нужный бад по названию, воспользуйтесь поиском
+              .search-2
+                +search-form('Введите название бада', '#icon-search')
+              span.title-lg или выбирайте подходящий раздел:
+              .nav-sections-container.row
+                .nav-sections-box__item.col-4.col-md-6.col-sm-12
+                  +nav-section-item('ДАВЛЕНИЕ', 'Гипертония')
+                .nav-sections-box__item.col-4.col-md-6.col-sm-12
+                  +nav-section-item('СУСТАВЫ', 'Артриты, артрозы, остеохондрозы, остеопорозы и т.д.')
+                .nav-sections-box__item.col-4.col-md-6.col-sm-12
+                  +nav-section-item('ПОТЕНЦИЯ И МУЖСКИЕ ЗАБОЛЕВАНИЯ', 'Простатит, заболевания мочеполовой системы или усилители потенции, либидо')
+                .nav-sections-box__item.col-4.col-md-6.col-sm-12
+                  +nav-section-item('ПОХУДЕНИЕ', 'Добавки для снижения веса')
+                .nav-sections-box__item.col-4.col-md-6.col-sm-12
+                  +nav-section-item('ПАРАЗИТЫ', 'Глисты, гельминты')
+                .nav-sections-box__item.col-4.col-md-6.col-sm-12
+                  +nav-section-item('ГРИБОК', 'Грибковые инфекции, микозы, кандидозы')
+                .nav-sections-box__item.col-4.col-md-6.col-sm-12
+                  +nav-section-item('ЗРЕНИЕ', 'Болезни глаз, восстановление зрения')
+                .nav-sections-box__item.col-4.col-md-6.col-sm-12
+                  +nav-section-item('УШИ', 'Восстановление слуха, добавки для лечения болезней')
+                .nav-sections-box__item.col-4.col-md-6.col-sm-12
+                  +nav-section-item('КОЖНЫЕ ЗАБОЛЕВАНИЯ', 'Папилломы, псориаз')
+                .nav-sections-box__item.col-4.col-md-6.col-sm-12
+                  +nav-section-item('ДЛЯ ЖЕНЩИН', 'Интересные женские натуральные добавки')
+                .nav-sections-box__item.col-4.col-md-6.col-sm-12
+                  +nav-section-item('ВАЛЬГУСНАЯ ДЕФОРМАЦИЯ', 'Вальгус, косточка, шишка')
+      
+      section.important-material
+        .wrap
+          .title-lg САМЫЕ ВАЖНЫЕ МАТЕРИАЛЫ
+          .important-material-box.row
+            .important-material-box__item.col-4.col-md-6.col-sm-12
+              +important-material__item('Описание всех видов развода, обмана, лохотрона!', 'Как обманывают пользователей? Как избежать развода при покупке БАДа.', 'Читайте подробнее в статье по ссылке ')
+            .important-material-box__item.col-4.col-md-6.col-sm-12
+              +important-material__item('Как проверить подлинность любого БАДа ?', 'Есть ли способы отличить подделку от оригинала? И что делать, если вы уже купили, заказали препарат и теперь не знаете, что делать. ', 'Читайте подробнее в статье по ссылке ')
+            .important-material-box__item.col-4.col-md-6.col-sm-12
+              +important-material__item('Правила пользования порталом ', 'Всю информацию вы получите перейдя по ссылки', 'Читайте подробнее в статье по ссылке ')
+      
+      section.comments
+        .wrap
+          h4.title-lg СВЕЖИЕ КОММЕНТАРИИ К ЗАПИСЯМ
+          .comments-box.row
+            .col-3.col-xl-4.col-md-6.col-sm-12.comments-box__item
+              +comments-item('КУРИННАЯ ВЕРОНИКА ВЛАДИМИРОВНА', 'images/comments-avatar.jpg', 'Очень рады, что нас рекомендуют для изучения информации о препарате Артрофорс.')
+            .col-3.col-xl-4.col-md-6.col-sm-12.comments-box__item
+              +comments-item('КУРИННАЯ ВЕРОНИКА ВЛАДИМИРОВНА', 'images/comments-avatar.jpg', 'Очень рады, что нас рекомендуют для изучения информации о препарате Артрофорс.')
+            .col-3.col-xl-4.col-md-6.col-sm-12.comments-box__item
+              +comments-item('КУРИННАЯ ВЕРОНИКА ВЛАДИМИРОВНА', 'images/comments-avatar.jpg', 'Очень рады, что нас рекомендуют для изучения информации о препарате Артрофорс.')
+            .col-3.col-xl-4.col-md-6.col-sm-12.comments-box__item
+              +comments-item('КУРИННАЯ ВЕРОНИКА ВЛАДИМИРОВНА', 'images/comments-avatar.jpg', 'Очень рады, что нас рекомендуют для изучения информации о препарате Артрофорс.')
+            .col-3.col-xl-4.col-md-6.col-sm-12.comments-box__item
+              +comments-item('КУРИННАЯ ВЕРОНИКА ВЛАДИМИРОВНА', 'images/comments-avatar.jpg', 'Очень рады, что нас рекомендуют для изучения информации о препарате Артрофорс.')
+            .col-3.col-xl-4.col-md-6.col-sm-12.comments-box__item
+              +comments-item('КУРИННАЯ ВЕРОНИКА ВЛАДИМИРОВНА', 'images/comments-avatar.jpg', 'Очень рады, что нас рекомендуют для изучения информации о препарате Артрофорс.')
+            .col-3.col-xl-4.col-md-6.col-sm-12.comments-box__item
+              +comments-item('КУРИННАЯ ВЕРОНИКА ВЛАДИМИРОВНА', 'images/comments-avatar.jpg', 'Очень рады, что нас рекомендуют для изучения информации о препарате Артрофорс.')
+            .col-3.col-xl-4.col-md-6.col-sm-12.comments-box__item
+              +comments-item('КУРИННАЯ ВЕРОНИКА ВЛАДИМИРОВНА', 'images/comments-avatar.jpg', 'Очень рады, что нас рекомендуют для изучения информации о препарате Артрофорс.')
+            .col-3.col-xl-4.col-md-6.col-sm-12.comments-box__item
+              +comments-item('КУРИННАЯ ВЕРОНИКА ВЛАДИМИРОВНА', 'images/comments-avatar.jpg', 'Очень рады, что нас рекомендуют для изучения информации о препарате Артрофорс.')
+            .col-3.col-xl-4.col-md-6.col-sm-12.comments-box__item
+              +comments-item('КУРИННАЯ ВЕРОНИКА ВЛАДИМИРОВНА', 'images/comments-avatar.jpg', 'Очень рады, что нас рекомендуют для изучения информации о препарате Артрофорс.')
+            .col-3.col-xl-4.col-md-6.col-sm-12.comments-box__item
+              +comments-item('КУРИННАЯ ВЕРОНИКА ВЛАДИМИРОВНА', 'images/comments-avatar.jpg', 'Очень рады, что нас рекомендуют для изучения информации о препарате Артрофорс.')
+            .col-3.col-xl-4.col-md-6.col-sm-12.comments-box__item
+              +comments-item('КУРИННАЯ ВЕРОНИКА ВЛАДИМИРОВНА', 'images/comments-avatar.jpg', 'Очень рады, что нас рекомендуют для изучения информации о препарате Артрофорс.')
+          
+          .btn-box
+            button.btn.btn_4 Читать все комментарии
+
+          .comments-box.row.hide
+            .col-3.col-xl-4.col-md-6.col-sm-12.comments-box__item
+              +comments-item('КУРИННАЯ ВЕРОНИКА ВЛАДИМИРОВНА', 'images/comments-avatar.jpg', 'Очень рады, что нас рекомендуют для изучения информации о препарате Артрофорс.')
+            .col-3.col-xl-4.col-md-6.col-sm-12.comments-box__item
+              +comments-item('КУРИННАЯ ВЕРОНИКА ВЛАДИМИРОВНА', 'images/comments-avatar.jpg', 'Очень рады, что нас рекомендуют для изучения информации о препарате Артрофорс.')
+            .col-3.col-xl-4.col-md-6.col-sm-12.comments-box__item
+              +comments-item('КУРИННАЯ ВЕРОНИКА ВЛАДИМИРОВНА', 'images/comments-avatar.jpg', 'Очень рады, что нас рекомендуют для изучения информации о препарате Артрофорс.')
+            .col-3.col-xl-4.col-md-6.col-sm-12.comments-box__item
+              +comments-item('КУРИННАЯ ВЕРОНИКА ВЛАДИМИРОВНА', 'images/comments-avatar.jpg', 'Очень рады, что нас рекомендуют для изучения информации о препарате Артрофорс.')
+            .col-3.col-xl-4.col-md-6.col-sm-12.comments-box__item
+              +comments-item('КУРИННАЯ ВЕРОНИКА ВЛАДИМИРОВНА', 'images/comments-avatar.jpg', 'Очень рады, что нас рекомендуют для изучения информации о препарате Артрофорс.')
+            .col-3.col-xl-4.col-md-6.col-sm-12.comments-box__item
+              +comments-item('КУРИННАЯ ВЕРОНИКА ВЛАДИМИРОВНА', 'images/comments-avatar.jpg', 'Очень рады, что нас рекомендуют для изучения информации о препарате Артрофорс.')
+            .col-3.col-xl-4.col-md-6.col-sm-12.comments-box__item
+              +comments-item('КУРИННАЯ ВЕРОНИКА ВЛАДИМИРОВНА', 'images/comments-avatar.jpg', 'Очень рады, что нас рекомендуют для изучения информации о препарате Артрофорс.')
+            
+              
+
+
+    include ./templates/pug/footer
+    script(src="js/script.js")
+

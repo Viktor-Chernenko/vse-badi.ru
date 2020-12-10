@@ -1,0 +1,55 @@
+header.header
+  .header-top
+    .wrap
+      .header-top-box
+        a(href="#").logo
+          svg.icon
+            use(xlink:href="#icon-logo")
+          .logo__text medical
+        
+        .link-box
+          a.link(href="#") Проверка подлинности
+          a.link(href="#") Будьте осторожны
+        
+        +search-form('Поиск', '#icon-search')
+  nav.nav
+    .wrap
+      a.btn-mobile(href="#")#btnNavMobile
+        .btn-mobile__item
+          span
+          span
+          span
+        ul.nav-list
+          li.nav-list__item
+            a.nav__link(href="#") Главная
+          li.nav-list__item.nav-list__item_section
+            a.nav__link(href="#") Разделы
+            ul.sections-list
+              li.sections-list__item
+                a.sections-list__link(href="#") Давление
+              li.sections-list__item
+                a.sections-list__link(href="#") Похудение
+              li.sections-list__item
+                a.sections-list__link(href="#") Паразиты
+              li.sections-list__item
+                a.sections-list__link(href="#") Зрение
+              li.sections-list__item
+                a.sections-list__link(href="#") Суставы
+              li.sections-list__item
+                a.sections-list__link(href="#") Для женщин
+              li.sections-list__item
+                a.sections-list__link(href="#") Грибок
+              li.sections-list__item
+                a.sections-list__link(href="#") Кожные заболевания
+              li.sections-list__item
+                a.sections-list__link(href="#") Вальгусная деформация
+              li.sections-list__item
+                a.sections-list__link(href="#") Потенция и мужские заболевания
+              li.sections-list__item
+                a.sections-list__link(href="#") Уши
+          li.nav-list__item
+            a.nav__link(href="#") Правила пользования сайтом
+          li.nav-list__item
+            .link-box
+              a.link(href="#") Проверка подлинности
+              a.link(href="#") Будьте осторожны

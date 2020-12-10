@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Сервис проверки бадов и препоратов
+
+    //- favicons
+  
+    link(rel="apple-touch-icon" sizes="57x57" href="../images/favicons/apple-touch-icon-57x57.png" data-mce-href="../images/favicons/apple-touch-icon-57x57.png")
+    link(rel="apple-touch-icon" sizes="60x60" href="../images/favicons/apple-touch-icon-60x60.png" data-mce-href="../images/favicons/apple-touch-icon-60x60.png")
+    link(rel="apple-touch-icon" sizes="72x72" href="../images/favicons/apple-touch-icon-72x72.png" data-mce-href="../images/favicons/apple-touch-icon-72x72.png")
+    link(rel="apple-touch-icon" sizes="76x76" href="../images/favicons/apple-touch-icon-76x76.png" data-mce-href="../images/favicons/apple-touch-icon-76x76.png")
+    link(rel="apple-touch-icon" sizes="114x114" href="../images/favicons/apple-touch-icon-114x114.png" data-mce-href="../images/favicons/apple-touch-icon-114x114.png")
+    link(rel="apple-touch-icon" sizes="120x120" href="../images/favicons/apple-touch-icon-120x120.png" data-mce-href="../images/favicons/apple-touch-icon-120x120.png")
+    link(rel="apple-touch-icon" sizes="144x144" href="../images/favicons/apple-touch-icon-144x144.png" data-mce-href="../images/favicons/apple-touch-icon-144x144.png")
+    link(rel="apple-touch-icon" sizes="152x152" href="../images/favicons/apple-touch-icon-152x152.png" data-mce-href="../images/favicons/apple-touch-icon-152x152.png")
+    link(rel="apple-touch-icon" sizes="180x180" href="../images/favicons/apple-touch-icon-180x180.png" data-mce-href="../images/favicons/apple-touch-icon-180x180.png")
+    link(rel="icon" type="image/png" href="../images/favicons/favicon-32x32.png" sizes="32x32" data-mce-href="../images/favicons/favicon-32x32.png")
+    link(rel="icon" type="image/png" href="../images/favicons/android-chrome-192x192.png" sizes="192x192" data-mce-href="../images/favicons/android-chrome-192x192.png")
+    link(rel="icon" type="image/png" href="../images/favicons/favicon-96x96.png" sizes="96x96" data-mce-href="../images/favicons/favicon-96x96.png")
+    link(rel="icon" type="image/png" href="../images/favicons/favicon-16x16.png" sizes="16x16" data-mce-href="../images/favicons/favicon-16x16.png")    
+    meta(name="msapplication-TileColor" content="#da532c")
+    meta(name="msapplication-TileImage" content="../images/favicons/mstile-144x144.png")
+    meta(name="theme-color" content="#ffffff")
+    link(rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css")
+    link(rel="stylesheet" href="../css/style.css")
+  body
+    include ../templates/pug/ui/search
+    include ../templates/pug/nav-section-item-pages
+    include ../templates/pug/important-material
+    include ../templates/pug/comments-item
+
+    include ../templates/pug/header
+
+    .app
+      section.nav-sections
+          .wrap
+            .nav-sections-box
+              .wrap-2
+                h3.title-lg Найдите нужный бад по названию, воспользуйтесь поиском
+                .search-2
+                  +search-form('Введите название бада', '#icon-search')
+      .content
+        .wrap.content-box
+          aside.aside-left.active.load
+            button.btn-aside.btn-aside-left.open.load
+              .btn-aside-box
+                svg.icon.btn-aside-arrow.btn-aside-arrow_1
+                  use(xlink:href="#icon-arrow")
+                svg.icon.btn-aside-arrow.btn-aside-arrow_2
+                  use(xlink:href="#icon-arrow")
+            section.nav-sections
+                .nav-sections-box
+                  .nav-sections-container
+                    .nav-sections-box__item
+                      +nav-section-item-pages('ДАВЛЕНИЕ', 'Гипертония')
+                    .nav-sections-box__item
+                      +nav-section-item-pages('ПОХУДЕНИЕ', 'Добавки для снижения веса')
+                    .nav-sections-box__item
+                      +nav-section-item-pages('ЗРЕНИЕ', 'Болезни глаз, восстановление зрения')
+                    .nav-sections-box__item
+                      +nav-section-item-pages('ДЛЯ ЖЕНЩИН', 'Интересные женские натуральные добавки')
+                    .nav-sections-box__item
+                      +nav-section-item-pages('СУСТАВЫ', 'Артриты, артрозы, остеохондрозы, остеопорозы и т.д.')
+                    .nav-sections-box__item
+                      +nav-section-item-pages('ПАРАЗИТЫ', 'Глисты, гельминты')
+                    .nav-sections-box__item
+                      +nav-section-item-pages('УШИ', 'Восстановление слуха, добавки для лечения болезней')
+                    .nav-sections-box__item
+                      +nav-section-item-pages('ВАЛЬГУСНАЯ ДЕФОРМАЦИЯ', 'Вальгус, косточка, шишка')
+                    .nav-sections-box__item
+                      +nav-section-item-pages('ПОТЕНЦИЯ И МУЖСКИЕ ЗАБОЛЕВАНИЯ', 'Простатит, заболевания мочеполовой системы или усилители потенции, либидо')
+                    .nav-sections-box__item
+                      +nav-section-item-pages('ГРИБОК', 'Грибковые инфекции, микозы, кандидозы')
+                    .nav-sections-box__item
+                      +nav-section-item-pages('КОЖНЫЕ ЗАБОЛЕВАНИЯ', 'Папилломы, псориаз')
+
+          main.main-content.info
+            h1.title-md Правила пользования сайтом 
+            .text-box
+              p.text-lg Равным образом консультация с широким активом способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. С другой стороны начало повседневной работы по формированию позиции позволяет оценить значение существенных финансовых и административных условий. С другой стороны укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития. С другой стороны постоянный количественный рост и сфера нашей активности требуют от нас анализа систем массового участия. Идейные соображения высшего порядка, а также укрепление и развитие структуры требуют определения и уточнения существенных финансовых и административных условий.
+              p.text-lg Таким образом новая модель организационной деятельности требуют определения и уточнения существенных финансовых и административных условий. Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач.
+              p.text-lg Равным образом рамки и место обучения кадров способствует подготовки и реализации новых предложений. Товарищи! начало повседневной работы по формированию позиции позволяет оценить значение новых предложений.
+              p.text-lg Разнообразный и богатый опыт рамки и место обучения кадров способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что новая модель организационной деятельности позволяет выполнять важные задания по разработке систем массового участия. Не следует, однако забывать, что сложившаяся структура организации позволяет выполнять важные задания по разработке дальнейших направлений развития. Задача организации, в особенности же начало повседневной работы по формированию позиции способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям. Разнообразный и богатый опыт рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+              p.text-lg Не следует, однако забывать, что консультация с широким активом способствует подготовки и реализации новых предложений. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки соответствующий условий активизации. Таким образом сложившаяся структура организации позволяет оценить значение модели развития. Значимость этих проблем настолько очевидна, что консультация с широким активом позволяет оценить значение форм развития.
+              p.text-lg Идейные соображения высшего порядка, а также рамки и место обучения кадров представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности играет важную роль в формировании существенных финансовых и административных условий.
+              p.text-lg Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание систем массового участия. С другой стороны укрепление и развитие структуры способствует подготовки и реализации систем массового участия. Повседневная практика показывает, что новая модель организационной деятельности требуют определения и уточнения новых предложений. Товарищи! консультация с широким активом влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач.
+          aside.aside-right
+            button.btn-aside.btn-aside-right
+              .btn-aside-box
+                svg.icon.btn-aside-arrow.btn-aside-arrow_1
+                  use(xlink:href="#icon-arrow")
+                svg.icon.btn-aside-arrow.btn-aside-arrow_2
+                  use(xlink:href="#icon-arrow")
+            .main-title
+              .main-title-box
+                img(src="../images/main-title-img(doctor).png", alt="Доктор")
+                .wrap
+                  .text-box
+                    h1.title-md Сервис проверки бадов и препоратов
+                    p.text-base Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.
+                    p.text-base Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не.
+                  a(href="#").link.link_2 Читайте подробнее
+
+              .comments
+                .wrap
+                  h4.title-sm СВЕЖИЕ КОММЕНТАРИИ К ЗАПИСЯМ
+                  .comments-box
+                    .comments-box__item
+                      +comments-item('КУРИННАЯ ВЕРОНИКА ВЛАДИМИРОВНА', '../images/comments-avatar.jpg', 'Очень рады, что нас рекомендуют для изучения информации о препарате Артрофорс.')
+                    .comments-box__item
+                      +comments-item('КУРИННАЯ ВЕРОНИКА ВЛАДИМИРОВНА', '../images/comments-avatar.jpg', 'Очень рады, что нас рекомендуют для изучения информации о препарате Артрофорс.')
+                    .comments-box__item
+                      +comments-item('КУРИННАЯ ВЕРОНИКА ВЛАДИМИРОВНА', '../images/comments-avatar.jpg', 'Очень рады, что нас рекомендуют для изучения информации о препарате Артрофорс.')
+                    .comments-box__item
+                      +comments-item('КУРИННАЯ ВЕРОНИКА ВЛАДИМИРОВНА', '../images/comments-avatar.jpg', 'Очень рады, что нас рекомендуют для изучения информации о препарате Артрофорс.')
+                    
+
+
+    include ../templates/pug/footer
+    script(src="../js/script.js")

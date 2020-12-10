@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сервис проверки бадов и препоратов</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="../images/favicons/apple-touch-icon-57x57.png" data-mce-href="../images/favicons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="../images/favicons/apple-touch-icon-60x60.png" data-mce-href="../images/favicons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/favicons/apple-touch-icon-72x72.png" data-mce-href="../images/favicons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../images/favicons/apple-touch-icon-76x76.png" data-mce-href="../images/favicons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/favicons/apple-touch-icon-114x114.png" data-mce-href="../images/favicons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../images/favicons/apple-touch-icon-120x120.png" data-mce-href="../images/favicons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../images/favicons/apple-touch-icon-144x144.png" data-mce-href="../images/favicons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../images/favicons/apple-touch-icon-152x152.png" data-mce-href="../images/favicons/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicons/apple-touch-icon-180x180.png" data-mce-href="../images/favicons/apple-touch-icon-180x180.png" />
+    <link rel="icon" type="image/png" href="../images/favicons/favicon-32x32.png" sizes="32x32" data-mce-href="../images/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" href="../images/favicons/android-chrome-192x192.png" sizes="192x192" data-mce-href="../images/favicons/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" href="../images/favicons/favicon-96x96.png" sizes="96x96" data-mce-href="../images/favicons/favicon-96x96.png" />
+    <link rel="icon" type="image/png" href="../images/favicons/favicon-16x16.png" sizes="16x16" data-mce-href="../images/favicons/favicon-16x16.png" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-TileImage" content="../images/favicons/mstile-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="wrap">
+                <div class="header-top-box"><a class="logo" href="#">
+                        <svg class="icon">
+                            <use xlink:href="#icon-logo"></use>
+                        </svg>
+                        <div class="logo__text">medical</div>
+                    </a>
+                    <div class="link-box"><a class="link" href="#">Проверка подлинности</a><a class="link" href="#">Будьте осторожны</a></div>
+                    <form class="search-form">
+                        <input class="search-form__input" type="search" placeholder="Поиск" />
+                        <button class="btn btn_3">
+                            <svg class="icon">
+                                <use xlink:href="#icon-search"></use>
+                            </svg>
+                        </button>
+                        <ul class="search-result active">
+                            <li class="search-result__item"><a class="search-result__link" href="#">Продукт 1</a></li>
+                            <li class="search-result__item"><a class="search-result__link" href="#">Продукт 2</a></li>
+                            <li class="search-result__item"><a class="search-result__link" href="#">Продукт 3</a></li>
+                            <li class="search-result__item"><a class="search-result__link" href="#">Продукт 4</a></li>
+                            <li class="search-result__item"><a class="search-result__link" href="#">Продукт 5</a></li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <nav class="nav">
+            <div class="wrap"><a class="btn-mobile" href="#" id="btnNavMobile">
+                    <div class="btn-mobile__item"><span></span><span></span><span></span></div>
+                    <ul class="nav-list">
+                        <li class="nav-list__item"><a class="nav__link" href="#">Главная</a></li>
+                        <li class="nav-list__item nav-list__item_section"><a class="nav__link" href="#">Разделы</a>
+                            <ul class="sections-list">
+                                <li class="sections-list__item"><a class="sections-list__link" href="#">Давление</a></li>
+                                <li class="sections-list__item"><a class="sections-list__link" href="#">Похудение</a></li>
+                                <li class="sections-list__item"><a class="sections-list__link" href="#">Паразиты</a></li>
+                                <li class="sections-list__item"><a class="sections-list__link" href="#">Зрение</a></li>
+                                <li class="sections-list__item"><a class="sections-list__link" href="#">Суставы</a></li>
+                                <li class="sections-list__item"><a class="sections-list__link" href="#">Для женщин</a></li>
+                                <li class="sections-list__item"><a class="sections-list__link" href="#">Грибок</a></li>
+                                <li class="sections-list__item"><a class="sections-list__link" href="#">Кожные заболевания</a></li>
+                                <li class="sections-list__item"><a class="sections-list__link" href="#">Вальгусная деформация</a></li>
+                                <li class="sections-list__item"><a class="sections-list__link" href="#">Потенция и мужские заболевания</a></li>
+                                <li class="sections-list__item"><a class="sections-list__link" href="#">Уши</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-list__item"><a class="nav__link" href="#">Правила пользования сайтом</a></li>
+                        <li class="nav-list__item">
+                            <div class="link-box"><a class="link" href="#">Проверка подлинности</a><a class="link" href="#">Будьте осторожны</a></div>
+                        </li>
+                    </ul>
+                </a></div>
+        </nav>
+    </header>
+    <div class="app">
+        <div class="content search-content">
+            <div class="wrap content-box">
+                <aside class="aside-left active load">
+                    <button class="btn-aside btn-aside-left open load">
+                        <div class="btn-aside-box">
+                            <svg class="icon btn-aside-arrow btn-aside-arrow_1">
+                                <use xlink:href="#icon-arrow"></use>
+                            </svg>
+                            <svg class="icon btn-aside-arrow btn-aside-arrow_2">
+                                <use xlink:href="#icon-arrow"></use>
+                            </svg>
+                        </div>
+                    </button>
+                    <section class="nav-sections">
+                        <div class="nav-sections-box">
+                            <div class="nav-sections-container">
+                                <div class="nav-sections-box__item"><a class="nav-sections__item" href="#">
+                                        <div class="title-s">ДАВЛЕНИЕ</div>
+                                        <div class="text-lg">Гипертония</div>
+                                    </a>
+                                </div>
+                                <div class="nav-sections-box__item"><a class="nav-sections__item" href="#">
+                                        <div class="title-s">ПОХУДЕНИЕ</div>
+                                        <div class="text-lg">Добавки для снижения веса</div>
+                                    </a>
+                                </div>
+                                <div class="nav-sections-box__item"><a class="nav-sections__item" href="#">
+                                        <div class="title-s">ЗРЕНИЕ</div>
+                                        <div class="text-lg">Болезни глаз, восстановление зрения</div>
+                                    </a>
+                                </div>
+                                <div class="nav-sections-box__item"><a class="nav-sections__item" href="#">
+                                        <div class="title-s">ДЛЯ ЖЕНЩИН</div>
+                                        <div class="text-lg">Интересные женские натуральные добавки</div>
+                                    </a>
+                                </div>
+                                <div class="nav-sections-box__item"><a class="nav-sections__item" href="#">
+                                        <div class="title-s">СУСТАВЫ</div>
+                                        <div class="text-lg">Артриты, артрозы, остеохондрозы, остеопорозы и т.д.</div>
+                                    </a>
+                                </div>
+                                <div class="nav-sections-box__item"><a class="nav-sections__item" href="#">
+                                        <div class="title-s">ПАРАЗИТЫ</div>
+                                        <div class="text-lg">Глисты, гельминты</div>
+                                    </a>
+                                </div>
+                                <div class="nav-sections-box__item"><a class="nav-sections__item" href="#">
+                                        <div class="title-s">УШИ</div>
+                                        <div class="text-lg">Восстановление слуха, добавки для лечения болезней</div>
+                                    </a>
+                                </div>
+                                <div class="nav-sections-box__item"><a class="nav-sections__item" href="#">
+                                        <div class="title-s">ВАЛЬГУСНАЯ ДЕФОРМАЦИЯ</div>
+                                        <div class="text-lg">Вальгус, косточка, шишка</div>
+                                    </a>
+                                </div>
+                                <div class="nav-sections-box__item"><a class="nav-sections__item" href="#">
+                                        <div class="title-s">ПОТЕНЦИЯ И МУЖСКИЕ ЗАБОЛЕВАНИЯ</div>
+                                        <div class="text-lg">Простатит, заболевания мочеполовой системы или усилители потенции, либидо</div>
+                                    </a>
+                                </div>
+                                <div class="nav-sections-box__item"><a class="nav-sections__item" href="#">
+                                        <div class="title-s">ГРИБОК</div>
+                                        <div class="text-lg">Грибковые инфекции, микозы, кандидозы</div>
+                                    </a>
+                                </div>
+                                <div class="nav-sections-box__item"><a class="nav-sections__item" href="#">
+                                        <div class="title-s">КОЖНЫЕ ЗАБОЛЕВАНИЯ</div>
+                                        <div class="text-lg">Папилломы, псориаз</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </aside>
+                <main class="main-content">
+                    <div class="search-box">
+                        <ul class="search-result-list">
+                            <li class="search-result-list__item">
+                                <h3 class="title-s"><a class="link_3" href="#">Кардитонус</a> от ООО Вятская Корпорация: где купить, цена в аптеках, отзывы, инструкция по применению!</h3>
+                                <p class="text-lg">Говорят, что <a class="link_3" href="#">Кардитонус</a> развод! Якобы эффекта от препарата от гипертонии – нет! Но есть реальные отзывы покупателей, специалистов, которые говорят, что эффект есть! Поэтому наш Сервис Проверки Качества БАДов связался напрямую с производителем <a class="link_3" href="#">Кардитонус</a>,...</p>
+                            </li>
+                            <li class="search-result-list__item">
+                                <h3 class="title-s">Тут пример вывода данных из глобального поиска по <a class="link_3" href="#">Кардитонус</a></h3>
+                                <p class="text-lg">Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Многие думают, что Lorem Ipsum - взятый с потолка <a class="link_3" href="#">Кардитонус</a> псевдо-латинский набор слов, но это не совсем так. Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.</p>
+                            </li>
+                        </ul>
+                        <div class="pagination-box">
+                            <div class="pagination"><a class="pagination-arrow-prev" href="#">
+                                    <svg class="icon">
+                                        <use xlink:href="#icon-arrow"></use>
+                                    </svg></a><span class="text-base">Страницы:</span>
+                                <ul class="pagination-list">
+                                    <li class="pagination-list__item"><a class="pagination__link" href="#">1</a></li>
+                                    <li class="pagination-list__item"><a class="pagination__link active" href="#">2</a></li>
+                                    <li class="pagination-list__item"><a class="pagination__link" href="#">3</a></li>
+                                    <li class="pagination-list__item"><a class="pagination__link" href="#">4</a></li>
+                                    <li class="pagination-list__item"><a class="pagination__link" href="#">...</a></li>
+                                    <li class="pagination-list__item"><a class="pagination__link" href="#">23</a></li>
+                                    <li class="pagination-list__item"><a class="pagination__link" href="#">24</a></li>
+                                </ul><a class="pagination-arrow-next" href="#">
+                                    <svg class="icon">
+                                        <use xlink:href="#icon-arrow"></use>
+                                    </svg></a>
+                            </div>
+                            <div class="pagination-container">
+                                <ul class="pagination-container-list">
+                                    <li class="pagination-container-list__item">1</li>
+                                    <li class="pagination-container-list__item">-</li>
+                                    <li class="pagination-container-list__item">23</li>
+                                    <li class="pagination-container-list__item">из</li>
+                                    <li class="pagination-container-list__item">24</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <aside class="aside-right">
+                    <button class="btn-aside btn-aside-right">
+                        <div class="btn-aside-box">
+                            <svg class="icon btn-aside-arrow btn-aside-arrow_1">
+                                <use xlink:href="#icon-arrow"></use>
+                            </svg>
+                            <svg class="icon btn-aside-arrow btn-aside-arrow_2">
+                                <use xlink:href="#icon-arrow"></use>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="main-title">
+                        <div class="main-title-box"><img src="../images/main-title-img(doctor).png" alt="Доктор" />
+                            <div class="wrap">
+                                <div class="text-box">
+                                    <h1 class="title-md">Сервис проверки бадов и препоратов</h1>
+                                    <p class="text-base">Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.</p>
+                                    <p class="text-base">Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не.</p>
+                                </div><a class="link link_2" href="#">Читайте подробнее</a>
+                            </div>
+                        </div>
+                        <div class="comments">
+                            <div class="wrap">
+                                <h4 class="title-sm">СВЕЖИЕ КОММЕНТАРИИ К ЗАПИСЯМ</h4>
+                                <div class="comments-box">
+                                    <div class="comments-box__item">
+                                        <div class="comments__item">
+                                            <div class="img-box"><img src="../images/comments-avatar.jpg" alt="Аватар" /></div>
+                                            <div class="text-box">
+                                                <div class="text-lg">КУРИННАЯ ВЕРОНИКА ВЛАДИМИРОВНА</div>
+                                                <div class="text-md text-md_gray">написал (а):</div>
+                                                <div class="text-md">Очень рады, что нас рекомендуют для изучения информации о препарате Артрофорс.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comments-box__item">
+                                        <div class="comments__item">
+                                            <div class="img-box"><img src="../images/comments-avatar.jpg" alt="Аватар" /></div>
+                                            <div class="text-box">
+                                                <div class="text-lg">КУРИННАЯ ВЕРОНИКА ВЛАДИМИРОВНА</div>
+                                                <div class="text-md text-md_gray">написал (а):</div>
+                                                <div class="text-md">Очень рады, что нас рекомендуют для изучения информации о препарате Артрофорс.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comments-box__item">
+                                        <div class="comments__item">
+                                            <div class="img-box"><img src="../images/comments-avatar.jpg" alt="Аватар" /></div>
+                                            <div class="text-box">
+                                                <div class="text-lg">КУРИННАЯ ВЕРОНИКА ВЛАДИМИРОВНА</div>
+                                                <div class="text-md text-md_gray">написал (а):</div>
+                                                <div class="text-md">Очень рады, что нас рекомендуют для изучения информации о препарате Артрофорс.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comments-box__item">
+                                        <div class="comments__item">
+                                            <div class="img-box"><img src="../images/comments-avatar.jpg" alt="Аватар" /></div>
+                                            <div class="text-box">
+                                                <div class="text-lg">КУРИННАЯ ВЕРОНИКА ВЛАДИМИРОВНА</div>
+                                                <div class="text-md text-md_gray">написал (а):</div>
+                                                <div class="text-md">Очень рады, что нас рекомендуют для изучения информации о препарате Артрофорс.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="wrap">
+            <div class="footer-box">
+                <div class="text-md">Сервис БАДов © 2020. Информация, опубликованная на сайте, носит исключительно ознакомительный характер и не является рекомендацией к применению. Перед применением препаратов - проконсультируйтесь с вашим лечащим врачом!</div>
+            </div>
+        </div>
+    </footer><svg width="0" height="0" class="icon-hidden">
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 34" id="icon-logo">
+            <path d="M31.262 2.732C29.11.579 25.782.409 23.837 2.359l-6.79 6.79c.719-.709 3.042.455 5.19 2.603 2.148 2.149 3.322 4.486 2.61 5.2l6.789-6.79c1.944-1.95 1.78-5.277-.374-7.43zm-19.5 19.5c-2.153-2.153-3.317-4.48-2.604-5.194l-6.79 6.79c-1.94 1.94-1.78 5.271.373 7.43 2.154 2.158 5.48 2.323 7.43.373l6.79-6.79c-.723.709-3.05-.455-5.2-2.609zm5.781-9.374c.485-.485.654-1.159.349-1.455-.306-.296-.97-.155-1.455.345-.485.499-.655 1.154-.345 1.454.31.301.966.156 1.45-.344zm-2.338 2.347c.485-.485.66-1.159.35-1.455-.311-.295-.97-.155-1.456.35-.485.504-.654 1.154-.344 1.455.31.3.95.15 1.45-.35zm-2.003.883c-.31-.31-.97-.155-1.455.35-.485.503-.654 1.153-.344 1.454.31.3.97.155 1.455-.344.485-.5.654-1.15.344-1.46zm9.059 1.469c.485-.485.655-1.159.345-1.454-.31-.296-.97-.156-1.455.349-.485.504-.66 1.154-.345 1.454.316.301.956.15 1.455-.349zm-3.472 1.233c-.485.484-.66 1.153-.344 1.454.315.3.97.155 1.454-.344.485-.5.655-1.16.345-1.455-.31-.296-.956-.16-1.455.344zm-2.352 2.346c-.485.485-.655 1.155-.345 1.455.31.301.97.155 1.455-.349.485-.504.655-1.154.35-1.455-.306-.3-.96-.15-1.46.35z" fill="#fff"></path>
+            <path d="M21.088 14.032c.485-.485.654-1.16.344-1.455-.31-.296-.97-.155-1.455.344-.485.5-.655 1.16-.344 1.455.31.296.95.155 1.455-.344zm-3.822 2.681c.31.306.97.156 1.455-.349.485-.504.655-1.159.344-1.455-.31-.295-.97-.155-1.455.345-.485.5-.654 1.164-.344 1.46zm-.538.553c-.31-.31-.97-.155-1.455.345-.485.5-.65 1.154-.34 1.455.31.3.97.16 1.455-.345.485-.504.67-1.15.34-1.455zm-3.817 2.697c-.485.485-.66 1.154-.349 1.455.31.3.97.15 1.455-.35.485-.499.65-1.159.34-1.454-.311-.296-.946-.156-1.446.349z" fill="#fff"></path>
+            <path d="M7.916 15.714l7.803-7.798-5.558-5.558C8.221.418 4.89.578 2.731 2.73.575 4.885.415 8.211 2.359 10.156l5.558 5.558zm18.162 2.561l-7.798 7.803 5.567 5.558c1.94 1.94 5.272 1.78 7.425-.378 2.153-2.159 2.318-5.476.373-7.425l-5.567-5.558z" stroke="#fff" stroke-width="2" stroke-miterlimit="10"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" id="icon-search">
+            <path d="M29.041 27.325l-7.14-7.426a12.073 12.073 0 002.842-7.787C24.743 5.435 19.309 0 12.631 0 5.95 0 .518 5.434.518 12.113c0 6.678 5.434 12.112 12.113 12.112a11.98 11.98 0 006.939-2.192l7.194 7.482c.301.313.705.485 1.139.485.41 0 .8-.156 1.095-.44a1.582 1.582 0 00.043-2.235zM12.631 3.16c4.936 0 8.952 4.016 8.952 8.953 0 4.936-4.016 8.952-8.952 8.952-4.937 0-8.953-4.016-8.953-8.953 0-4.936 4.016-8.952 8.953-8.952z" fill="#fff"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" id="icon-clients-comments">
+            <path d="M6 0C2.692 0 0 2.692 0 6s2.692 6 6 6 6-2.692 6-6-2.692-6-6-6zm0 11.124A5.13 5.13 0 01.876 6 5.13 5.13 0 016 .876 5.13 5.13 0 0111.124 6 5.13 5.13 0 016 11.124z" fill="#B9B9B9"></path>
+            <path d="M8.044 6H6.146V3.372a.438.438 0 10-.875 0v3.066c0 .242.196.438.437.438h2.336a.438.438 0 100-.876z" fill="#B9B9B9"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 21" id="icon-arrow">
+            <rect width="14.818" height="2.193" rx="1.096" transform="scale(-1 1) rotate(45 -5.239 -12.648)"></rect>
+            <rect x="10.478" y="21" width="14.818" height="2.193" rx="1.096" transform="rotate(-135 10.478 21)"></rect>
+        </symbol>
+    </svg>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
